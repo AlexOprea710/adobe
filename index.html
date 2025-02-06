@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Aplicare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Aplică pentru job</h2>
+    <form id="jobForm">
+        <input type="text" id="nume" placeholder="Nume" required>
+        <input type="text" id="prenume" placeholder="Prenume" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="button" onclick="trimiteEmail()">Trimite</button>
+    </form>
+</div>
+
+<script>
+    function trimiteEmail() {
+        let nume = document.getElementById("nume").value;
+        let prenume = document.getElementById("prenume").value;
+        let email = document.getElementById("email").value;
+
+        if (!nume || !prenume || !email) {
+            alert("Completează toate câmpurile!");
+            return;
+        }
+
+        let mailtoLink =-width, initial-scale=1.0">
+    <title>Formular Aplicare</title>
+    <style>
+        body {
+            font-family: 
+        window.location.href = mailtoLink;
+    }
+</script>
+
+</body>
+</html>
