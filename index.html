@@ -31,6 +31,7 @@
             color: white;
             border: none;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         button:hover {
             background-color: #218838;
@@ -60,11 +61,10 @@
             return;
         }
 
-        let mailtoLink =-width, initial-scale=1.0">
-    <title>Formular Aplicare</title>
-    <style>
-        body {
-            font-family: 
+        // Construim link-ul mailto corect
+        let mailtoLink = `mailto:dataforgecontact@gmail.com?subject=Aplicare Job&body=Nume: ${nume}%0APrenume: ${prenume}%0AEmail: ${email}`;
+
+        // Trimite emailul
         window.location.href = mailtoLink;
     }
 </script>
